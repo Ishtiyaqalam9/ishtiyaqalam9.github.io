@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px;
+    background:#1e293b;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#38bdf8;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
