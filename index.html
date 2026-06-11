@@ -4,79 +4,270 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ishtiyaq Alam | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-<header class="hero">
-  <img src="profile.jpg" alt="Ishtiyaq Alam" class="profile-img">
-  <h1>Ishtiyaq Alam</h1>
-  <p>CSE Student | Competitive Programmer | Developer</p>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
 
-  <div class="links">
-    <a href="https://github.com/Ishtiyaqalam9">GitHub</a>
-    <a href="https://codeforces.com/profile/1119074">Codeforces</a>
-    <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/">Linkedin</a>
-  </div>
-</header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">IA<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#cp">CP</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#wishlist">Wishlist</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<section class="card">
-  <h2>Objective</h2>
-  <p>
-    I am a Computer Science and Engineering student currently in the learning phase, building a strong foundation in programming, data structures, algorithms, and software development. I enjoy solving problems through competitive programming and gradually improving my skills in writing clean and efficient code.
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <div class="profile-wrapper">
+        <div class="profile-ring"></div>
+        <img src="profile.jpg" alt="Ishtiyaq Alam" class="profile-img" onerror="this.src='https://picsum.photos/seed/ishtiyaq9/300/300.jpg'"/>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ishtiyaq Alam</h1>
+        <p class="hero-title">
+          <span class="title-bracket">&lt;</span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
+          <span class="title-bracket">/&gt;</span>
+        </p>
+        <div class="hero-links">
+          <a href="https://github.com/Ishtiyaqalam9" target="_blank" class="hero-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://codeforces.com/profile/1119074" target="_blank" class="hero-btn secondary">
+            <i class="fas fa-code"></i> Codeforces
+          </a>
+          <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/" target="_blank" class="hero-btn secondary">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+      <p>Scroll Down</p>
+    </div>
+  </header>
 
-Along with programming, I also have basic knowledge of databases and enjoy working with simple backend systems. My goal is to continuously learn, improve my problem-solving ability, and grow into a skilled software developer who can build practical and impactful applications in the future.
-  </p>
-</section>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a Computer Science and Engineering student currently in the learning phase, building a strong foundation in programming, data structures, algorithms, and software development. I enjoy solving problems through competitive programming and gradually improving my skills in writing clean and efficient code.</p>
+          <p>Along with programming, I also have basic knowledge of databases and enjoy working with simple backend systems. My goal is to continuously learn, improve my problem-solving ability, and grow into a skilled software developer who can build practical and impactful applications in the future.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="400">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Problems Solved</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Competitions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="grid">
-  <div class="card">
-    <h2>Competitive Programming</h2>
-    <h3>400+ Problems Solved</h3>
-    <p>ICPC Dhaka Regionals</p>
-    <p>IUPC BAIUST</p>
-    <p>IUPC BUP</p>
-    <p>Team BAIUST_Alpha_Squad</p>
-  </div>
+  <section class="section section-alt" id="cp">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Competitive Programming</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cp-highlight">
+        <div class="cp-counter">
+          <span class="cp-number">400+</span>
+          <span class="cp-label">Problems Solved</span>
+        </div>
+        <div class="cp-badge">
+          <i class="fas fa-trophy"></i>
+          <span>ICPC Dhaka Regionals</span>
+        </div>
+      </div>
+      <div class="cp-grid">
+        <div class="cp-card">
+          <div class="cp-card-icon"><i class="fas fa-flag"></i></div>
+          <h3>ICPC Dhaka Regionals</h3>
+          <p>Regional Contestant</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon"><i class="fas fa-university"></i></div>
+          <h3>IUPC BAIUST</h3>
+          <p>Intra University Programming Contest</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon"><i class="fas fa-university"></i></div>
+          <h3>IUPC BUP</h3>
+          <p>Inter University Programming Contest</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon"><i class="fas fa-users"></i></div>
+          <h3>BAIUST_Alpha_Squad</h3>
+          <p>Team Leader & Member</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h2>Education & Roles</h2>
-    <p>Student – CSE, BAIUST</p>
-    <p>Executive – BAIUST Computer Club</p>
-    <p>Executive – BAIUST IEEE</p>
-    <p>Mentor – CP Master Program</p>
-    <p>Tutor – Programming Language,Arabic & Others</p>
-  </div>
-</section>
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Education & Roles</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Student – CSE</h3>
+            <p>BAIUST (Bangladesh Army International University of Science and Technology)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Executive – BAIUST Computer Club</h3>
+            <p>Organizing tech events and workshops</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Executive – BAIUST IEEE</h3>
+            <p>Contributing to IEEE student branch activities</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>Mentor – CP Master Program</h3>
+            <p>Guiding juniors in competitive programming</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class="fas fa-book-reader"></i></div>
+            <h3>Tutor – Programming, Arabic & Others</h3>
+            <p>Teaching and mentoring fellow students</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="card">
-  <h2>Skills</h2>
-  <div class="tags">
-    <span>Python</span><span>Django</span><span>C/C++</span><span>HTML/CSS</span>
-    <span>React</span><span>Next.js</span>
-    <span>MySQL</span><span>PostgreSQL</span>
-    <span>GitHub Actions</span><span>Data Science</span>
-  </div>
-</section>
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-tools"></i> Tools & Others</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Data Science</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="card wishlist">
-  <h2>🎁 My Wishlist</h2>
-  <div class="wish-grid">
-    <div>🏎️ Hot Wheels</div>
-    <div>📚 System Design Books</div>
-    <div>⌨️ Mechanical Keyboard</div>
-    <div>💡 Lightbar</div>
-    <div>🕋 Hajj</div>
-    <div>🎓 PhD</div>
-    <div>✈️ Travel with Teams</div>
-    <div>🚙 Buy a Car</div>
-  </div>
-</section>
+  <section class="section" id="wishlist">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05</span>
+        <h2 class="section-title">🎁 My Wishlist</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="wish-grid">
+        <div class="wish-card"><div class="wish-emoji">🏎️</div><span>Hot Wheels</span></div>
+        <div class="wish-card"><div class="wish-emoji">📚</div><span>System Design Books</span></div>
+        <div class="wish-card"><div class="wish-emoji">⌨️</div><span>Mechanical Keyboard</span></div>
+        <div class="wish-card"><div class="wish-emoji">💡</div><span>Lightbar</span></div>
+        <div class="wish-card"><div class="wish-emoji">🕋</div><span>Hajj</span></div>
+        <div class="wish-card"><div class="wish-emoji">🎓</div><span>PhD</span></div>
+        <div class="wish-card"><div class="wish-emoji">✈️</div><span>Travel with Teams</span></div>
+        <div class="wish-card"><div class="wish-emoji">🚙</div><span>Buy a Car</span></div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Ishtiyaq Alam | Built with ❤️</p>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">IA<span class="dot">.</span></div>
+        <div class="footer-links">
+          <a href="https://github.com/Ishtiyaqalam9" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://codeforces.com/profile/1119074" target="_blank"><i class="fas fa-code"></i></a>
+          <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="footer-text">© 2026 Ishtiyaq Alam | Built with ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
 <script src="script.js"></script>
 </body>
