@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, observerOptions);
 
-  document.querySelectorAll(".about-text, .about-stats, .cp-highlight, .cp-card, .skill-category, .wish-card").forEach((el, i) => {
+  document.querySelectorAll(".about-text, .about-stats, .cp-highlight, .cp-card, .skill-category, .wish-card, .contact-card").forEach((el, i) => {
     el.classList.add("fade-up");
     el.style.transitionDelay = `${i % 4 * 0.1}s`;
     revealObserver.observe(el);
