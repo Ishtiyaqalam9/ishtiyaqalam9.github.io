@@ -1,330 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ishtiyaq Alam, a CSE student, competitive programmer and aspiring software developer.">
+  <meta name="theme-color" content="#0a0a0a">
   <title>Ishtiyaq Alam | Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
 
-  <div class="bg-glow glow-1"></div>
-  <div class="bg-glow glow-2"></div>
-
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">IA<span class="dot">.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">IA<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#cp">CP</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#wishlist">Wishlist</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cv" href="assets/Ishtiyaq_Alam_CV.pdf" download>CV <i class="fa-solid fa-download"></i></a></li>
       </ul>
     </div>
   </nav>
 
   <header class="hero" id="hero">
+    <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+    <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+
     <div class="hero-content">
       <div class="profile-wrapper">
         <div class="profile-ring"></div>
-        <img src="profile.jpg" alt="Ishtiyaq Alam" class="profile-img" onerror="this.src='https://picsum.photos/seed/ishtiyaq9/300/300.jpg'"/>
+        <img src="profile.jpg" alt="Ishtiyaq Alam" class="profile-img">
+        <span class="profile-status" title="Open to learning and collaboration"></span>
       </div>
+
       <div class="hero-text">
         <p class="hero-greeting">Hello, I'm</p>
         <h1 class="hero-name">Ishtiyaq Alam</h1>
-        <p class="hero-title">
+        <p class="hero-title" aria-label="Professional roles">
           <span class="title-bracket">&lt;</span>
           <span class="typewriter" id="typewriter"></span>
           <span class="cursor">|</span>
           <span class="title-bracket">/&gt;</span>
         </p>
+
         <div class="hero-links">
-          <a href="https://github.com/Ishtiyaqalam9" target="_blank" class="hero-btn">
+          <a href="https://github.com/Ishtiyaqalam9" target="_blank" rel="noreferrer" class="hero-btn">
             <i class="fab fa-github"></i> GitHub
           </a>
-          <a href="https://codeforces.com/profile/1119074" target="_blank" class="hero-btn secondary">
+          <a href="https://codeforces.com/profile/1119074" target="_blank" rel="noreferrer" class="hero-btn secondary">
             <i class="fas fa-code"></i> Codeforces
           </a>
-          <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/" target="_blank" class="hero-btn secondary">
+          <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/" target="_blank" rel="noreferrer" class="hero-btn secondary">
             <i class="fab fa-linkedin"></i> LinkedIn
           </a>
-          <a href="https://leetcode.com/u/Ishtiyaq_Alam/" target="_blank" class="hero-btn secondary">
-            <i class="fas fa-code"></i> Leetcode
+          <a href="https://leetcode.com/u/Ishtiyaq_Alam/" target="_blank" rel="noreferrer" class="hero-btn secondary">
+            <i class="fas fa-terminal"></i> LeetCode
+          </a>
+          <a href="assets/Ishtiyaq_Alam_CV.pdf" download class="hero-btn cv-btn">
+            <i class="fa-regular fa-file-lines"></i> Download CV
           </a>
         </div>
       </div>
     </div>
-    <div class="scroll-indicator">
+
+    <div class="scroll-indicator" aria-hidden="true">
       <div class="mouse"><div class="wheel"></div></div>
       <p>Scroll Down</p>
     </div>
   </header>
 
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">01</span>
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I am a Computer Science and Engineering student currently in the learning phase, building a strong foundation in programming, data structures, algorithms, and software development. I enjoy solving problems through competitive programming and gradually improving my skills in writing clean and efficient code.</p>
-          <p>Along with programming, I also have basic knowledge of databases and enjoy working with simple backend systems. My goal is to continuously learn, improve my problem-solving ability, and grow into a skilled software developer who can build practical and impactful applications in the future.</p>
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
         </div>
-        <div class="about-stats">
-          <div class="stat-item">
-            <span class="stat-number" data-target="400">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Problems Solved</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Technologies</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Competitions</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section section-alt" id="cp">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">02</span>
-        <h2 class="section-title">Competitive Programming</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="cp-highlight">
-        <div class="cp-counter">
-          <span class="cp-number">400+</span>
-          <span class="cp-label">Problems Solved</span>
-        </div>
-        <div class="cp-badge">
-          <i class="fas fa-trophy"></i>
-          <span>ICPC Dhaka Regionals</span>
-        </div>
-      </div>
-      <div class="cp-grid">
-        <div class="cp-card">
-          <div class="cp-card-icon"><i class="fas fa-flag"></i></div>
-          <h3>ICPC Dhaka Regionals</h3>
-          <p>Regional Contestant</p>
-        </div>
-        <div class="cp-card">
-          <div class="cp-card-icon"><i class="fas fa-university"></i></div>
-          <h3>IUPC BAIUST</h3>
-          <p>Intra University Programming Contest</p>
-        </div>
-        <div class="cp-card">
-          <div class="cp-card-icon"><i class="fas fa-university"></i></div>
-          <h3>IUPC BUP</h3>
-          <p>Inter University Programming Contest</p>
-        </div>
-        <div class="cp-card">
-          <div class="cp-card-icon"><i class="fas fa-users"></i></div>
-          <h3>BAIUST_Alpha_Squad</h3>
-          <p>Team Leader & Member</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I am a Computer Science and Engineering student currently in the learning phase, building a strong foundation in programming, data structures, algorithms, and software development. I enjoy solving problems through competitive programming and gradually improving my skills in writing clean and efficient code.</p>
+            <p>Along with programming, I also have basic knowledge of databases and enjoy working with simple backend systems. My goal is to continuously learn, improve my problem-solving ability, and grow into a skilled software developer who can build practical and impactful applications in the future.</p>
+          </div>
 
-  <section class="section" id="education">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">03</span>
-        <h2 class="section-title">Education & Roles</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-            <h3>Student – CSE</h3>
-            <p>BAIUST (Bangladesh Army International University of Science and Technology)</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
-            <h3>Executive – BAIUST Computer Club</h3>
-            <p>Organizing tech events and workshops</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-icon"><i class="fas fa-microchip"></i></div>
-            <h3>Executive – BAIUST IEEE</h3>
-            <p>Contributing to IEEE student branch activities</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-            <h3>Mentor – CP Master Program</h3>
-            <p>Guiding juniors in competitive programming</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-icon"><i class="fas fa-book-reader"></i></div>
-            <h3>Tutor – Programming, Arabic & Others</h3>
-            <p>Teaching and mentoring fellow students</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div><span class="stat-number" data-target="400">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Problems Solved</span>
+            </div>
+            <div class="stat-item">
+              <div><span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <div><span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Competitions</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">04</span>
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-code"></i> Languages</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C/C++</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">JavaScript</span>
+    <section class="section section-alt" id="cp">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02</span>
+          <h2 class="section-title">Competitive Programming</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="cp-highlight">
+          <div class="cp-counter">
+            <span class="cp-number">400+</span>
+            <span class="cp-label">Problems Solved</span>
+          </div>
+          <div class="cp-badge">
+            <i class="fas fa-trophy"></i>
+            <span>ICPC Dhaka Regionals</span>
           </div>
         </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-layer-group"></i> Frameworks</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Django</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Next.js</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-database"></i> Databases</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">NoSQL</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-tools"></i> Tools & Others</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">GitHub Actions</span>
-            <span class="skill-tag">Data Science</span>
-            <span class="skill-tag">HTML/CSS</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-brain"></i> Concepts</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">OOP</span>
-            <span class="skill-tag">DSA</span>
-            <span class="skill-tag">TOC</span>
-            <span class="skill-tag">DBMS</span>
-            <span class="skill-tag">Discrete Mathematics</span>
-          </div>
+
+        <div class="cp-grid">
+          <article class="cp-card">
+            <div class="cp-card-icon"><i class="fas fa-flag"></i></div>
+            <h3>ICPC Dhaka Regionals</h3>
+            <p>Regional Contestant</p>
+          </article>
+          <article class="cp-card">
+            <div class="cp-card-icon"><i class="fas fa-university"></i></div>
+            <h3>IUPC BAIUST</h3>
+            <p>Intra University Programming Contest</p>
+          </article>
+          <article class="cp-card">
+            <div class="cp-card-icon"><i class="fas fa-university"></i></div>
+            <h3>IUPC BUP</h3>
+            <p>Inter University Programming Contest</p>
+          </article>
+          <article class="cp-card">
+            <div class="cp-card-icon"><i class="fas fa-users"></i></div>
+            <h3>BAIUST_Alpha_Squad</h3>
+            <p>Team Leader &amp; Member</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="wishlist">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">05</span>
-        <h2 class="section-title">🎁 My Wishlist</h2>
-        <div class="section-line"></div>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03</span>
+          <h2 class="section-title">Live Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-heading">
+          <p>My live work is listed here<code></code></p>
+        </div>
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
       </div>
-      <div class="wish-grid">
-        <div class="wish-card"><div class="wish-emoji">🏎️</div><span>Hot Wheels</span></div>
-        <div class="wish-card"><div class="wish-emoji">📚</div><span>System Design Books</span></div>
-        <div class="wish-card"><div class="wish-emoji">⌨️</div><span>Mechanical Keyboard</span></div>
-        <div class="wish-card"><div class="wish-emoji">💡</div><span>Lightbar</span></div>
-        <div class="wish-card"><div class="wish-emoji">🕋</div><span>Hajj</span></div>
-        <div class="wish-card"><div class="wish-emoji">🎓</div><span>PhD</span></div>
-        <div class="wish-card"><div class="wish-emoji">✈️</div><span>Travel with Teams</span></div>
-        <div class="wish-card"><div class="wish-emoji">🚙</div><span>Buy a Car</span></div>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04</span>
+          <h2 class="section-title">Education &amp; Roles</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3>Student - CSE</h3>
+              <p>BAIUST (Bangladesh Army International University of Science and Technology)</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Executive - BAIUST Computer Club</h3>
+              <p>Organizing tech events and workshops</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-icon"><i class="fas fa-microchip"></i></div>
+              <h3>Executive - BAIUST IEEE</h3>
+              <p>Contributing to IEEE student branch activities</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+              <h3>Mentor - CP Master Program</h3>
+              <p>Guiding juniors in competitive programming</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-icon"><i class="fas fa-book-reader"></i></div>
+              <h3>Tutor - Programming, Arabic &amp; Others</h3>
+              <p>Teaching and mentoring fellow students</p>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section-alt" id="contact">
-  <div class="container">
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <div class="section-line"></div>
+        </div>
 
-    <div class="section-header">
-      <span class="section-tag">Get In Touch</span>
-      <h2 class="section-title">Contact Me</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="contact-grid">
-
-      <div class="contact-card">
-        <i class="fas fa-envelope contact-icon"></i>
-        <h3>Email</h3>
-        <a href="mailto:yourmail@gmail.com">ishtiyaqalam9562@gmail.com</a>
+        <div class="skills-grid">
+          <article class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-code"></i> Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C/C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </article>
+          <article class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-layer-group"></i> Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+            </div>
+          </article>
+          <article class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">NoSQL</span>
+            </div>
+          </article>
+          <article class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-tools"></i> Tools &amp; Others</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Data Science</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </article>
+          <article class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-brain"></i> Concepts</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">DSA</span>
+              <span class="skill-tag">TOC</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">Discrete Mathematics</span>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-card">
-        <i class="fas fa-phone contact-icon"></i>
-        <h3>Phone</h3>
-        <a href="tel:+8801XXXXXXXXX">+880 1302749010</a>
+    <section class="section section-alt" id="wishlist">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06</span>
+          <h2 class="section-title">My Wishlist</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="wish-grid">
+          <article class="wish-card"><div class="wish-emoji">🏎️</div><span>Hot Wheels</span></article>
+          <article class="wish-card"><div class="wish-emoji">📚</div><span>System Design Books</span></article>
+          <article class="wish-card"><div class="wish-emoji">⌨️</div><span>Mechanical Keyboard</span></article>
+          <article class="wish-card"><div class="wish-emoji">💡</div><span>Lightbar</span></article>
+          <article class="wish-card"><div class="wish-emoji">🕋</div><span>Hajj</span></article>
+          <article class="wish-card"><div class="wish-emoji">🎓</div><span>PhD</span></article>
+          <article class="wish-card"><div class="wish-emoji">✈️</div><span>Travel with Teams</span></article>
+          <article class="wish-card"><div class="wish-emoji">🚙</div><span>Buy a Car</span></article>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-card">
-        <i class="fas fa-location-dot contact-icon"></i>
-        <h3>Location</h3>
-        <p>Dhaka, Bangladesh</p>
+    <section class="contact-section" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-title">
+          <span class="section-tag">07</span>
+          <h2>Contact Me</h2>
+          <p>Use any of the details below to contact me or view my portfolio and CV.</p>
+        </div>
+
+        <div class="contact-panel">
+          <a href="mailto:ishtiyaqalam9562@gmail.com">
+            <span><i class="fa-regular fa-envelope"></i>Email</span>
+            <strong>ishtiyaqalam9562@gmail.com</strong>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="tel:+8801302749010">
+            <span><i class="fa-solid fa-phone"></i>Phone</span>
+            <strong>+880 1302-749010</strong>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="https://ishtiyaqalam9.github.io" target="_blank" rel="noreferrer">
+            <span><i class="fa-solid fa-globe"></i>Portfolio</span>
+            <strong>ishtiyaqalam9.github.io</strong>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="assets/Ishtiyaq_Alam_CV.pdf" download>
+            <span><i class="fa-regular fa-file-lines"></i>Curriculum Vitae</span>
+            <strong>Download CV</strong>
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <div>
+            <span><i class="fa-solid fa-location-dot"></i>Present Address</span>
+            <strong>Cumilla Cantonment, Cumilla</strong>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-house"></i>Permanent Address</span>
+            <strong>Fulgazi Upazila, Feni District, Chittagong Division, Bangladesh</strong>
+          </div>
+        </div>
       </div>
-
-      <div class="contact-card">
-        <i class="fas fa-file-download contact-icon"></i>
-        <h3>Resume</h3>
-        <a href="resume.pdf" download>Download CV</a>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">IA<span class="dot">.</span></div>
-        <div class="footer-links">
-          <a href="https://github.com/Ishtiyaqalam9" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://codeforces.com/profile/1119074" target="_blank"><i class="fas fa-code"></i></a>
-          <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <p class="footer-text">© 2026 Ishtiyaq Alam | Built with ❤️</p>
+    <div class="container footer-content">
+      <div class="footer-logo">IA<span class="dot">.</span></div>
+      <div class="footer-links" aria-label="Social links">
+        <a href="https://github.com/Ishtiyaqalam9" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://codeforces.com/profile/1119074" target="_blank" rel="noreferrer" aria-label="Codeforces"><i class="fas fa-code"></i></a>
+        <a href="https://www.linkedin.com/in/ishtiyaq-alam-63a994227/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://leetcode.com/u/Ishtiyaq_Alam/" target="_blank" rel="noreferrer" aria-label="LeetCode"><i class="fas fa-terminal"></i></a>
       </div>
+      <p class="footer-text">&copy; <span id="year">2026</span> Ishtiyaq Alam | Built with care</p>
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
