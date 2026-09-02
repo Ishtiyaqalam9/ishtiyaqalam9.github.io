@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // liveUrl and sourceUrl are optional. Leave sourceUrl empty when unavailable.
   const projects = [
     {
-      title: "Personal Portfolio Website",
-      category: "Live Web Project",
-      description: "My personal website featuring my background, competitive programming, education, skills, wishlist and contact information.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveUrl: "https://ishtiyaqalam9.github.io",
+      title: "UniCore",
+      category: "University Management System",
+      description: "A role-based Django University Management System for students, teachers and administrators. The project preserves the original database connections while providing a unified and user-friendly portal. Developed this project to gain practical experience in integrating and managing multiple databases within a single application.",
+      technologies: ["MySQL", "MongoDB", "PostgreSQL", "SQLite"],
+      liveUrl: "https://youtu.be/HtWH4Gy5gVw?si=goDG6qx-7k05h1eZ",
       sourceUrl: ""
     }
   ];
